@@ -20,6 +20,7 @@ body{
 
 
     /* temporarly */
+    border: 1px solid black;
 }
 
 *{
@@ -30,5 +31,36 @@ body{
 
 .about-me{
     display: flex;
+    margin: 2rem 2.5rem;
+    justify-content: space-evenly;
+    /* temp */
+    height: 100%;
+}
 
+.picture-container{
+    position: relative;
+}
+
+.picture-container > h1 {
+    position: absolute;
+    bottom: 1rem;
+    margin: 0;
+    font-size: 3rem;
+    left: 50%;  
+    transform: translateX(-50%); 
+    width: max-content;
+    
+}
+
+.picture-container > img{
+    width: 350px;
+}
+
+.about-me-description-container{
+    height: 100%;
+    padding: 1.8rem 1.2rem;
+    align-self: center;
+    max-width: calc(100% - 350px);
+    background-color: white;
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.1);
 }

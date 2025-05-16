@@ -39,6 +39,7 @@ body{
 
 .picture-container{
     position: relative;
+    width: 100%;
 }
 
 .picture-container > h1 {
@@ -54,10 +55,9 @@ body{
     text-shadow: 3px 3px 2px grey;
 }
 
-.picture-container > img{
+.profile-img{
     border-radius: 5px;
-
-    width: 350px;
+    width: 400px;
     box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -108,15 +108,44 @@ body{
     .about-me{
         position: relative;
         margin-top: 20px;
+        margin: 1.5rem 2rem;
+        height: 30rem;
+        justify-content: flex-start;
     }
 
     .about-me-description-container{
         position: absolute;
         max-width: calc(100% - 5rem);
-        top: 50px;
-        height: 100%;
+        top: 2rem;
+        left: 2rem;
+        height: 23rem;
         z-index: -1;
+        margin: 0px;
+        display: flex;
+
+        flex-direction: column;
+        padding-left: 16rem;
+        justify-content: space-between;
     }
 
+    .picture-container{
+        max-width: 17rem;
+        /* width: 100%; */
+        height: 24rem;
+    }
+
+    .picture-container > h1{
+        font-size: 3rem;
+    }
+
+    .profile-img{
+        max-width: 17rem;
+        height: 24rem;
+        width: auto;
+    }
+
+    .link-container{
+        /* align-self: flex-end; */
+    }
 
 }

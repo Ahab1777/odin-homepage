@@ -15,12 +15,17 @@
         <div class="about-me">
             <div class="picture-container">
                 <h1 class="">Jon Doe</h1>
-                <img src="/assets/picture desktop.jpg" alt="">
-                
-
-
-
-
+                <picture>
+                    <source
+                    srcset="/assets/picture-desktop.jpg"
+                    media="(min-width: 1200px)"
+                    />
+                    <source
+                    srcset="/assets/picture-tablet.jpg"
+                    media="(min-width: 500px)"
+                    />
+                    <img src="/assets/picture-desktop.jpg" alt="Jon Doe's picture" class="profile-img">
+                </picture>
             </div>
             <div class="about-me-description-container">
                 <h2>About Me</h2>

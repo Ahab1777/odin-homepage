@@ -4,9 +4,9 @@ html{
     height: 100%;
     background: linear-gradient(
         170deg,          /* Left-to-right flow */
-        aquamarine 20.1%,
-        grey 20.5%,          /* Blue begins at 30% */
-        white 20.9%        /* Ends green */
+        aquamarine 30.1%,
+        grey 30.5%,          /* Blue begins at 30% */
+        white 30.9%        /* Ends green */
     );
 }
 
@@ -45,22 +45,78 @@ body{
     position: absolute;
     bottom: 1rem;
     margin: 0;
-    font-size: 3rem;
+    font-size: 4rem;
     left: 50%;  
     transform: translateX(-50%); 
     width: max-content;
-    
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px grey;
 }
 
 .picture-container > img{
+    border-radius: 5px;
+
     width: 350px;
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 .about-me-description-container{
+    border-radius: 0px 5px 5px 0px;
     height: 100%;
     padding: 1.8rem 1.2rem;
     align-self: center;
     max-width: calc(100% - 350px);
     background-color: white;
     box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-description-container > p{
+    margin: 15px 0px;
+}
+
+.link-container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.link-container > img{
+    height: 30px;
+}
+
+
+
+
+/* mobile */
+@media (max-width: 499px) {
+
+}
+
+/* tablet */
+@media (min-width: 500px) and (max-width: 1199px) {
+    /* Global */
+    body{
+        max-width: 800px;
+    }
+
+    .main-container{
+        position: relative;
+    }
+
+    /* Header - About me */
+    .about-me{
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .about-me-description-container{
+        position: absolute;
+        max-width: calc(100% - 5rem);
+        top: 50px;
+        height: 100%;
+        z-index: -1;
+    }
+
+
 }

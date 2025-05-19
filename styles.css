@@ -90,7 +90,38 @@ body{
 
 /* mobile */
 @media (max-width: 599px) {
+    body{
+        max-width: 500px;
+    }
 
+    .about-me{
+        border: 1rem 0.5rem;
+        margin: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .picture-container{
+        justify-content: center;
+        align-content: center;
+        justify-self: center;
+        /* position: absolute; */
+        left: 50%;  
+        transform: translateX(-50%); 
+        width: max-content;
+    }
+
+    .about-me-description-container{
+        max-width: 98vw;
+        border: none;
+        box-shadow: none;
+    }
+
+    .profile-img{
+        max-width: 85vw;
+        /* width: max-content; */
+        /* display: block; */
+    }
 }
 
 /* tablet */

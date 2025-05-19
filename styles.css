@@ -89,12 +89,12 @@ body{
 
 
 /* mobile */
-@media (max-width: 499px) {
+@media (max-width: 599px) {
 
 }
 
 /* tablet */
-@media (min-width: 500px) and (max-width: 1199px) {
+@media (min-width: 600px) and (max-width: 1199px) {
     /* Global */
     body{
         max-width: 800px;
@@ -107,9 +107,8 @@ body{
     /* Header - About me */
     .about-me{
         position: relative;
-        margin-top: 20px;
-        margin: 1.5rem 2rem;
-        height: 30rem;
+        margin: 1.5rem 1.2rem;
+        min-height: 30rem;
         justify-content: flex-start;
     }
 
@@ -118,20 +117,28 @@ body{
         max-width: calc(100% - 5rem);
         top: 2rem;
         left: 2rem;
-        height: 23rem;
+        min-height: 23rem;
+        height: auto;
         z-index: -1;
         margin: 0px;
         display: flex;
 
         flex-direction: column;
         padding-left: 16rem;
+        padding-right: 0.5rem;
         justify-content: space-between;
+    }
+
+    .about-me-description-container > h2{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
     }
 
     .picture-container{
         max-width: 17rem;
         /* width: 100%; */
         height: 24rem;
+        float: left;
     }
 
     .picture-container > h1{
@@ -145,7 +152,7 @@ body{
     }
 
     .link-container{
-        /* align-self: flex-end; */
+        align-self:self-end;
     }
 
 }

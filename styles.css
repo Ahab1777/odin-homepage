@@ -27,6 +27,13 @@ body{
     box-sizing: border-box;
 }
 
+/* Disclaimer for clickable links */
+
+.link-container > img:active, .card-description > img:active, .card-description > svg:active{
+    background-color: rgb(255, 0, 0);
+}
+
+
 /* Header */
 
 .about-me{
@@ -40,6 +47,7 @@ body{
 .picture-container{
     position: relative;
     width: 100%;
+    transform: rotate(-2deg) translate(7px);
 }
 
 .picture-container > h1 {
@@ -127,7 +135,6 @@ body{
 
 .card:hover{
     transform: scale(1.02);
-    cursor: pointer;
 }
 
 .card > img{
@@ -165,6 +172,7 @@ body{
 .card-description > img:hover, .card-description > svg:hover{
     transform: scale(1.2);
     opacity: 0.6;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -238,13 +246,11 @@ body{
     }
 
     .about-me-description-container{
-        /* position: absolute; */
         max-width: calc(100% - 5rem);
         top: 2rem;
         left: 2rem;
         min-height: 23rem;
         height: auto;
-        /* z-index: -1; */
         margin: 0px;
         margin-top: 2rem;
         margin-left: 2.5rem;
@@ -329,8 +335,6 @@ body{
     .info-container > h2 {
         margin-bottom: 2rem;
     }
-   
-
 
 }
 
@@ -356,9 +360,8 @@ body{
         justify-content: center;
         align-content: center;
         justify-self: center;
-        /* position: absolute; */
         left: 50%;  
-        transform: translateX(-50%); 
+        transform: translateX(-50%) rotate(-2deg);
         width: max-content;
     }
 
@@ -416,4 +419,16 @@ body{
     }
     
 }
+
+/* ----------REAL footer (HTML footer) -------- */
+
+footer{
+    margin: 2rem 8rem;
+    text-align: center;
+}
+
+.note{
+    font-weight: bold;
+}
+
 
